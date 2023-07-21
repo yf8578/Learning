@@ -1,0 +1,1 @@
+time python3 -u /hwfssz8/MGI_BIOINFO/USER/chentian/projects/Multi-PCR_Analysis/MultiPcrAnalysis_mbp/src/MultiPcrAnalysis_parallel.py --ref Eg_Em --primer Eg_Em_primer --samples samples.csv --fqtype PE150 --cut_r2 0 --vcf 0 --o Eg_Em_output

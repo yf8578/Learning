@@ -1,0 +1,22 @@
+[2023-05-23 14:05:04,345] INFO: ref path: /hwfssz8/MGI_BIOINFO/USER/chentian/projects/Multi-PCR_Analysis/MultiPcrAnalysis_mbp/lib/ref/Eg_Em_panel.fa
+[2023-05-23 14:05:04,346] INFO: primer path: /hwfssz8/MGI_BIOINFO/USER/chentian/projects/Multi-PCR_Analysis/MultiPcrAnalysis_mbp/lib/primer/Eg_Em_mtRNA_primer.xlsx
+[2023-05-23 14:05:04,346] INFO: step0: build primer index
+[2023-05-23 14:05:04,524] INFO: out_path: /hwfssz8/MGI_BIOINFO/USER/chentian/projects/Multi-PCR_Analysis/MultiPcrAnalysisV2.0/project/Eg_Em/20230522/Eg_Em_output
+[2023-05-23 14:05:04,726] INFO: create database have been done.
+[2023-05-23 14:05:14,517] INFO: AB0184402_8 Rprimer and AB786664_sub1_37-R are the same
+[2023-05-23 14:05:14,525] INFO: AB0184402_10 Fprimer and AB786664_sub1_45-F are the same.
+[2023-05-23 14:05:14,580] INFO: AB0184402_69 Fprimer and AB786664_sub7_3-F are the same.
+[2023-05-23 14:05:14,586] INFO: AB0184402_75 Rprimer and Homo_AB786664_sub10_6-R are the same
+[2023-05-23 14:05:14,588] INFO: AB0184402_77 Fprimer and Homo_AB786664_sub10_11-F are the same.
+[2023-05-23 14:05:14,589] INFO: AB0184402_78 Fprimer and Homo_AB786664_sub10_15-F are the same.
+[2023-05-23 14:05:14,606] INFO: AB0184402_96 Fprimer and Homo_AB786664_sub16_6-F are the same.
+[2023-05-23 14:05:14,606] INFO: AB0184402_96 Rprimer and Homo_AB786664_sub16_6-R are the same
+[2023-05-23 14:05:14,616] INFO: AB0184402_106 Rprimer and AB786664_sub17_27-R are the same
+[2023-05-23 14:05:14,634] WARNING: L-mtDNA-06 TACGCCCTCTCAGCCGAT is difference with ref_seq ATCGGCTGAGAGGGCGTA, use TACGCCCTCTCAGCCGAT to analysis.
+[2023-05-23 14:05:14,659] WARNING: mNGS-07 CCGCCATAGAGGGTAGATGC  is difference with ref_seq CCGCCATAGAGGGTAGATGCA, use CCGCCATAGAGGGTAGATGC  to analysis.
+[2023-05-23 14:05:14,667] WARNING: EmG GTCGTAACAAGGTTTCCGTA is difference with ref_seq ACTTGGAGTATTCTTGAGGC, use GTCGTAACAAGGTTTCCGTA to analysis.
+[2023-05-23 14:05:14,667] WARNING: EmG TCTAGATGCGTTCGAARTGTCGATG is difference with ref_seq gaaaaattagcttttaGTTC, use TCTAGATGCGTTCGAARTGTCGATG to analysis.
+[2023-05-23 14:05:18,752] INFO: build fprimer blastdb have been done.
+[2023-05-23 14:05:18,824] WARNING: The ['EGS-03'] primers on 2 different chromosome. 
+[2023-05-23 14:05:27,860] INFO: build primer index have done, amp_min_len = 59
+[2023-05-23 14:08:10,574] INFO: BC_1 start have been done.
