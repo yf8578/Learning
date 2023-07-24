@@ -52,15 +52,14 @@ PCA_plot <- function(gene, group, plot_title) {
     # ggplot2 绘制二维散点图
     p <- ggplot(data = pca_sample, aes(x = Dim.1, y = Dim.2)) +
         geom_point(aes(color = group), size = 3) + # 根据样本坐标绘制二维散点图
-        scale_color_manual(values = c(
-            "#F8766D", "#C49A00", "#53B400", "#00B6EB",
-            "#A58AFF", "#FB61D7", "#FF9900", "#FF33CC",
-            "#6666FF", "#b605eb", "#0a59d9", "#05cfa7",
-            "#b8e906", "#e99e07", "#2ffb0b", "#710aef",
-            "purple", "brown", "orange"
-        )) + # 自定义颜色
-        # scale_color_brewer(values = "Set1") +
-
+        # scale_color_manual(values = c(
+        #     "#F8766D", "#C49A00", "#53B400", "#00B6EB",
+        #     "#A58AFF", "#FB61D7", "#FF9900", "#FF33CC",
+        #     "#6666FF", "#b605eb", "#0a59d9", "#05cfa7",
+        #     "#b8e906", "#e99e07", "#2ffb0b", "#710aef",
+        #     "purple", "brown", "orange"
+        # )) + # 自定义颜色
+        scale_color_brewer(type = "qual", palette = "Paired") +
         theme(
             panel.grid = element_blank(),
             panel.background = element_rect(
