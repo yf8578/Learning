@@ -57,7 +57,7 @@ def main():
     print("step1")
     # print(html)
     fillUnivList(unifo, html)
-    printUnivList(unifo, 21)  # get 20 universities
+    printUnivList(unifo, 21)  # get 20 universitiesasf
 
 
 if __name__ == "__main__":
