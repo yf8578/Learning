@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 插入图片 -->
+    <p>图片
+    <a href="http://www.runoob.com/html/html-tutorial.html"><img src="image/desktop.png" alt="桌面截图" border="5" style="float:right" width="50" height="50">
+    </a>
+    <hr>
+    </p>
+    <p>
+        <table>
+                  <caption>表格标题</caption>
+              <thead>
+                <tr>
+                  <th>列标题1</th>
+                  <th>列标题2</th>
+                  <th>列标题3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>行1，列1</th>
+                  <td>行1，列2</td>
+                  <td>行1，列3</td>
+                </tr>
+                <tr>
+                  <td>行2，列1</td>
+                  <td>行2，列2</td>
+                  <td>行2，列3</td>
+                </tr>
+              </tbody>
+            <tfoot >表格页脚</tfoot>
+            </table>
+    </p>
+    <p>
+        <h4>一列:</h4>
+<table border="1">
+  <tr>
+    <td>100</td>
+  </tr>
+</table>
+ 
+<h4>一行三列:</h4>
+<table border="1">
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+</table>
+ 
+<h4>两行三列:</h4>
+<table border="1">
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>500</td>
+    <td>600</td>
+  </tr>
+</table>
+    <hr>
+    <h4>一个自定义列表：</h4>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<hr>
+<div id="container" style="width:500px">
+
+    <div id="header" style="background-color:#FFA500;">
+    <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+    
+    <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+    <b>菜单</b><br>
+    HTML<br>
+    CSS<br>
+    JavaScript</div>
+    
+    <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+    内容在这里</div>
+    
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;"> <a href="https://www.runoob.com/try/try.php?filename=tryhtml_layout_divs"> 这是链接</a>
+    版权 © runoob.com</div>
+    <hr>
+    <table width="500" border="0">
+        <tr>
+        <td colspan="2" style="background-color:#FFA500;">
+        <h1>主要的网页标题</h1>
+        </td>
+        </tr>
+         
+        <tr>
+        <td style="background-color:#FFD700;width:100px;">
+        <b>菜单</b><br>
+        HTML<br>
+        CSS<br>
+        JavaScript
+        </td>
+        <td style="background-color:#eeeeee;height:200px;width:400px;">
+        内容在这里</td>
+        </tr>
+         
+        <tr>
+        <td colspan="2" style="background-color:#FFA500;text-align:center;">
+        版权 © runoob.com</td>
+        </tr>
+        </table>
+        <hr>
+        <form action="">
+            First name: <input type="text" name="firstname"><br>
+            Last name: <input type="text" name="lastname">
+            </form>
+            <hr>
+            <form action="">
+                Username: <input type="text" name="user"><br>
+                Password: <input type="password" name="password">
+                </form>
+            <hr>
+            <form action="">
+                <input type="radio" name="sex" value="male">男<br>
+                <input type="radio" name="sex" value="female">女
+                </form>
+            <form>
+                <input type="checkbox" name="vehicle" value="Bike">我喜欢自行车<br>
+                <input type="checkbox" name="vehicle" value="Car">我喜欢小汽车
+                </form>
+                <br/>
+                <hr>
+                <form name="input" action="html_form_action.php" method="get">
+                    Username: <input type="text" name="user">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="重置">
+                    </form>
+<hr>
+<form action="demo-form.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+    <input type="reset" value="重置">
+    </form>
+
+
+    <hr>
+    <hr>
+    <script>
+      document.write("Hello World!")
+      </script> 
+      <hr>
+      <hr>
+      
+  </body>
+</html>
