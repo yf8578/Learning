@@ -1,0 +1,19 @@
+samples: /jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/config/units.csv
+
+softwares:
+  fastp:
+    path: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/software/miniconda3/bin/fastp
+  hisat2:
+    path: /share/app/hisat/2.2.1/hisat2
+    rRNAdatabase: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/Rscript/cfRNA_pip/rRNA_rmdup/rRNA-new/genome_ss_exon
+    human_genome: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/Rscript/cfRNA_pip/genome/genome_ss_exon/genome_ss_exon
+  featurecounts:
+    path: /hwfssz5/ST_HEALTH/P20Z10200N0041/leichanggui/projects/software/subread-2.0.2-Linux-x86_64/bin/featureCounts
+    human_gtf: /jdfssz1/ST_HEALTH/P20Z10200N0041/Wangyingying/cfRNA/cfRNA_reference/NCBI-GTF/GCF_000001405.40_GRCh38.p14_genomic.gtf
+  kraken2:
+    path: /hwfssz5/ST_HEALTH/P20Z10200N0041/leichanggui/projects/software/kraken2/kraken2
+    database: /hwfssz5/ST_HEALTH/P20Z10200N0041/leichanggui/cfRNA/all_test/kraken2/db/minikraken_8GB_20200312
+  seqtk:
+    path: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/software/seqtk/seqtk
+  samtools:
+    path: /share/app/samtools/1.11/bin/samtools

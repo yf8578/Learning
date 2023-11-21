@@ -1,0 +1,41 @@
+configfile: "config/config.yaml"
+
+
+report: "report/workflow.rst"
+
+
+# include
+include: "rules/common.smk"
+include: "rules/fastp.smk"
+include: "rules/rRNA.smk"
+include: "rules/featurecounts.smk"
+
+
+##rule_all
+rule all:
+    input:
+        expand("results/{sample}/fastp/{sample}.r1.fq.gz", sample=SAMPLES),
+        expand("results/{sample}/fastp/{sample}.r2.fq.gz", sample=SAMPLES),
+        expand(
+            "results/{sample}/fastp/{sample}.lengthfilter.fastp.json",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/fastp/{sample}.lengthfilter.fastp.html", sample=SAMPLES
+        ),
+        expand(
+            "results/{sample}/hisat2/{sample}.summary.txt",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/hisat2/{sample}_accepted_hits.sorted.bam",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/featurecount2/{sample}.featurecount.txt",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/featurecount1/{sample}.featurecount.txt",
+            sample=SAMPLES,
+        ),
