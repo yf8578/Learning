@@ -9,19 +9,29 @@ include: "rules/common.smk"
 include: "rules/fastp.smk"
 include: "rules/rRNA.smk"
 include: "rules/featurecounts.smk"
+include: "rules/qualimap.smk"
+include: "rules/kraken2.smk"
+include: "rules/miRNA.smk"
 
 
 ##rule_all
 rule all:
     input:
-        expand("results/{sample}/fastp/{sample}.r1.fq.gz", sample=SAMPLES),
-        expand("results/{sample}/fastp/{sample}.r2.fq.gz", sample=SAMPLES),
+        expand(
+            "results/{sample}/fastp/{sample}.r1.fq.gz",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/fastp/{sample}.r2.fq.gz",
+            sample=SAMPLES,
+        ),
         expand(
             "results/{sample}/fastp/{sample}.lengthfilter.fastp.json",
             sample=SAMPLES,
         ),
         expand(
-            "results/{sample}/fastp/{sample}.lengthfilter.fastp.html", sample=SAMPLES
+            "results/{sample}/fastp/{sample}.lengthfilter.fastp.html",
+            sample=SAMPLES,
         ),
         expand(
             "results/{sample}/hisat2/{sample}.summary.txt",
@@ -37,5 +47,17 @@ rule all:
         ),
         expand(
             "results/{sample}/featurecount1/{sample}.featurecount.txt",
+            sample=SAMPLES,
+        ),
+        expand(
+            "/jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/results/{sample}/miRNA/{sample}.final.txt",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/kraken2/{sample}.final.txt",
+            sample=SAMPLES,
+        ),
+        expand(
+            "results/{sample}/qualimap/{sample}.final.txt",
             sample=SAMPLES,
         ),

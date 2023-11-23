@@ -1,5 +1,6 @@
 samples: /jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/config/units.csv
 
+workpath: /jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake
 softwares:
   fastp:
     path: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/software/miniconda3/bin/fastp
@@ -17,3 +18,5 @@ softwares:
     path: /jdfssz1/ST_HEALTH/P20Z10200N0041/Lishaogang/software/seqtk/seqtk
   samtools:
     path: /share/app/samtools/1.11/bin/samtools
+  qualimap:
+    path: /hwfssz5/ST_HEALTH/P20Z10200N0041/leichanggui/projects/software/miniconda2/envs/aa/bin/qualimap

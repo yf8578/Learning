@@ -32,7 +32,7 @@ rule counts:
         feature_out_path1="results/{sample}/featurecount1/",
         feature_out_path2="results/{sample}/featurecount2/",
     params:
-        script_py="/jdfssz1/ST_HEALTH/P20Z10200N0041/Wangyingying/cfRNA/cfRNA_code/zhangyifan/gene_type_tpm/gene_summary_20230315.py",
+        script_py="/jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/gene_summary_20230315.py",
         conda_py="/hwfssz5/ST_HEALTH/P20Z10200N0041/zhangyifan1/miniconda3/bin/python",
     shell:
         "{params.conda_py} {params.script_py} {input.fea_txt1} {output.feature_out_path1} && "

@@ -36,6 +36,8 @@ rule alignment:
     output:
         sam="results/{sample}/hisat2/{sample}_accepted_hits.sam",
         summary="results/{sample}/hisat2/{sample}_hisat2_result.txt",
+        fastq1="results/{sample}/hisat2/{sample}_unmapped.1",
+        fastq2="results/{sample}/hisat2/{sample}_unmapped.2",
     params:
         path=config["softwares"]["hisat2"]["path"],
         genome=config["softwares"]["hisat2"]["human_genome"],
