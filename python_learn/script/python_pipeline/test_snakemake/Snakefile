@@ -11,7 +11,9 @@ include: "rules/rRNA.smk"
 include: "rules/featurecounts.smk"
 include: "rules/qualimap.smk"
 include: "rules/kraken2.smk"
-include: "rules/miRNA.smk"
+
+
+# include: "rules/miRNA.smk"
 
 
 ##rule_all
@@ -49,10 +51,10 @@ rule all:
             "results/{sample}/featurecount1/{sample}.featurecount.txt",
             sample=SAMPLES,
         ),
-        expand(
-            "/jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/results/{sample}/miRNA/{sample}.final.txt",
-            sample=SAMPLES,
-        ),
+        # expand(
+        #     "/jdfssz1/ST_HEALTH/P20Z10200N0041/zhangyifan1/master/test-snakemake/results/{sample}/miRNA/{sample}.final.txt",
+        #     sample=SAMPLES,
+        # ),
         expand(
             "results/{sample}/kraken2/{sample}.final.txt",
             sample=SAMPLES,
